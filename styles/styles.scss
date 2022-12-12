@@ -349,10 +349,11 @@ section{
                         width: 90%;
                     }
                     .css{
-                        width: 75%;
+                        width: 5%;
                     }
                     .java{
-                        width: 95%;
+                        width: 100%;
+                        background-color: red !important;
                     }
                 }
             }
@@ -608,7 +609,7 @@ section{
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                margin: 0, .4rem;
+                margin: 0 .4rem;
                 transition: all .4s ease-in-out;
                 &:hover{
                     background-color: var(--color-secondary);

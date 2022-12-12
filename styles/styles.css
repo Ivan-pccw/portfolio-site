@@ -367,10 +367,11 @@ section {
   width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 75%;
+  width: 5%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 95%;
+  width: 100%;
+  background-color: red !important;
 }
 
 .stat-title {
@@ -622,7 +623,7 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin: 0, 0.4rem;
+  margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
 }
 .contact-content-con .left-contact .contact-icon a:hover {

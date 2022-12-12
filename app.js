@@ -3,6 +3,8 @@ const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelectorAll('.main-content');
 
+let activeTimer = null
+let deactiveTimer = null
 
 function PageTransitions(){
     //button click active class
@@ -30,14 +32,23 @@ function PageTransitions(){
             //     section.classList.remove('active')
             // })
             
+            //Test for clear timer to fix bug
+            // if(activeTimer != null){ clearTimeout(activeTimer) }
+            // if(deactiveTimer != null){ clearTimeout(deactiveTimer) }
             
+            // let active = document.querySelectorAll('.active');
+            // if(active.length > 0){
+            //     active[0].className = active[0].className.replace('active', ' deactive');
+            // }
+
             let active = document.querySelectorAll('.active');
             active[0].className = active[0].className.replace('active', ' deactive');
-            setTimeout(() => {
+            
+            activeTimer = setTimeout(() => {
                 const element = document.getElementById(id)
                 element.classList.add('active')
             }, 1000);
-            setTimeout(()=>{
+            deactiveTimer = setTimeout(()=>{
                 sections.forEach((section) => {
                     section.classList.remove('deactive')
                 })
