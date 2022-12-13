@@ -11,7 +11,9 @@ function PageTransitions(){
     for(let i = 0; i < sectBtn.length; i++){
         sectBtn[i].addEventListener('click', function() {
             let curBtn = document.querySelectorAll('.active-btn');
-            curBtn[0].className = curBtn[0].className.replace('active-btn', '');
+            if(curBtn.length > 0){
+                curBtn[0].className = curBtn[0].className.replace('active-btn', '');
+            }
             this.className += ' active-btn';
         })
     }
@@ -36,14 +38,14 @@ function PageTransitions(){
             // if(activeTimer != null){ clearTimeout(activeTimer) }
             // if(deactiveTimer != null){ clearTimeout(deactiveTimer) }
             
-            // let active = document.querySelectorAll('.active');
-            // if(active.length > 0){
-            //     active[0].className = active[0].className.replace('active', ' deactive');
-            // }
-
             let active = document.querySelectorAll('.active');
-            active[0].className = active[0].className.replace('active', ' deactive');
-            
+            if(active.length > 0){
+                active[0].className = active[0].className.replace('active', ' deactive');
+            }
+
+            // let active = document.querySelectorAll('.active');
+            // active[0].className = active[0].className.replace('active', ' deactive');
+
             activeTimer = setTimeout(() => {
                 const element = document.getElementById(id)
                 element.classList.add('active')
@@ -78,3 +80,12 @@ function PageTransitions(){
 }
 
 PageTransitions();
+
+
+(function () {
+    document.querySelector("#note-blog").addEventListener("click", () => {
+        //document.querySelector(".active-btn").classList.remove("active-btn");
+        document.querySelector(".active").classList.remove("active");
+        document.querySelector("#note-blog-page").classList.add("active");
+    })
+})();

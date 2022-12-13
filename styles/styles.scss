@@ -19,6 +19,7 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
+    --color-yellow: yellow;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
@@ -35,6 +36,7 @@
     --color-grey-4: #454e56;
     --color-grey-5: #f8f8f8;
     --color-grey-6: #12181b;
+    --color-yellow: orange;
 }
 
 body{
@@ -94,6 +96,11 @@ section{
 }
 
 .sec5{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec6{
     display: none;
     transform: translateY(0) scale(1);
 }
@@ -657,6 +664,23 @@ section{
             justify-content: flex-start;
         }
     }
+}
+
+//Note blog
+.blog-page-text{
+    padding-top: 2rem;
+    a{
+        color: blueviolet;
+    }
+    .highlight{
+        color: var(--color-yellow);
+    }
+}
+
+.code-block{
+    border-radius: 15px;
+    line-break: auto;
+    background-color: var(--color-grey-5);
 }
 
 /* Independent components*/

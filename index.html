@@ -296,6 +296,17 @@
                             </p>
                         </div>
                     </div>
+                    <div class="blog" id="note-blog">
+                        <img src="img/KessokuBand.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Notes of the page
+                            </h4>
+                            <p>
+                                Click to view the notes of making this page.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -387,6 +398,73 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section sec6 blog-page" id="note-blog-page">
+            <div class="blog-page-con">
+                <div class="main-title">
+                    <h2>My <span>Notes</span><span class="bg-text">Tutorial</span></h2>
+                </div>
+                <div class="blog-page-text">
+                    Referencing 
+                    <a href="https://github.com/Maclinz/JS_CSS_PortfolioProject" target="_blank">
+                        <u>this GitHub repo</u>
+                    </a>
+                    following 
+                    <a href="https://youtu.be/xV7S8BhIeBo" target="_blank">
+                        <u>this YouTube tutorial</u>
+                    </a>
+                    .
+                </div>
+                <div class="blog-page-text">
+                    <h2>1. SCSS</h2>
+                    Use of varaible for easy changing style/ commonly use items
+                    <div class="code-block">
+                        <pre><code>
+    //define 
+    :root{
+        --color-primary: #191d2b;
+    }
+    .some-class{
+        --color-primary: #000000;
+    }
+
+    //use (inside some class)
+    {
+        ...
+        color: var(--color-primary);
+    }
+                        </code></pre>
+                    </div>
+                    <br/>
+                    More easy for nested classes
+                    <div class="code-block">
+                        <pre>
+                            <code>
+    //example
+    .blog{
+        ...
+        .blog-content{}
+    }
+
+</code></pre>
+                    </div>
+                    
+                    <br/>
+                    @import ‘./media’; for <span class="highlight">Media Queries</span>
+                    <br/>
+                    -  defining other style with different screen sizes
+                </div>
+                
+                <div class="blog-page-text">
+                    <h2>
+                        2. HTML
+                    </h2>
+                    Use of <a href="https://fontawesome.com/" target="_blank"><u>font-awesome</u></a> for the icons.
+                    
+                </div>
+
             </div>
         </section>
     </main>
